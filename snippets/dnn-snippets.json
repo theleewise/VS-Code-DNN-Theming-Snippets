@@ -1,0 +1,551 @@
+{
+	"DNN Container Content Pane": {
+		"prefix": "dnncontainercontentpane",
+		"body": [
+			"<div runat=\"server\" id=\"${1:ContentPane}\" />"
+		],
+		"description": "DNN Container Content Pane",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Container Icon": {
+		"prefix": "dnncontainericon",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"Icon\" Src=\"~/Admin/Containers/icon.ascx\" %>",
+			"<dnn:Icon runat=\"server\" id=\"${1:dnnIcon}\" />"
+		],
+		"description": "DNN Container Icon",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Container Title": {
+		"prefix": "dnncontainertitle",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"TITLE\" Src=\"~/Admin/Containers/Title.ascx\" %>",
+			"<dnn:Title runat=\"server\" id=\"${1:dnnTitle}\" />"
+		],
+		"description": "DNN Container Title",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Breadcrumbs": {
+		"prefix": "dnnbreadcrumbs",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"Breadcrumb\" Src=\"~/Admin/Skins/breadcrumb.ascx\" %>",
+			"<dnn:Breadcrumb runat=\"server\" id=\"${1:dnnBreadcrumb}\" CssClass=\"$2\" RootLevel=\"${3:1}\" Separator=\"$4\" UseTitle=\"${5:[true, false]}\" />"
+		],
+		"description": "DNN Breadcrumb",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN CSS Include": {
+		"prefix": "dnncss",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" Namespace=\"DotNetNuke.Web.Client.ClientResourceManagement\" Assembly=\"DotNetNuke.Web.Client\" %>",
+			"<dnn:DnnCssInclude runat=\"server\" PathNameAlias=\"${1:[SkinPath, SharedScripts]}\" FilePath=\"$2\" Priority=\"$3\" ForceProvider=\"$4\" />"
+		],
+		"description": "DNN CSS Include",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Copyright": {
+		"prefix": "dnncopyright",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"Copyright\" Src=\"~/Admin/Skins/copyright.ascx\" %>",
+			"<dnn:Copyright runat=\"server\" id=\"${1:dnnCopyright}\" CssClass=\"$2\" />"
+		],
+		"description": "DNN Copyright",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Date": {
+		"prefix": "dnndate",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"CURRENTDATE\" Src=\"~/Admin/Skins/CurrentDate.ascx\" %>",
+			"<dnn:CurrentDate runat=\"server\" id=\"${1:dnnCurrentDate}\" CssClass=\"$2\" DateFormat=\"${3:MMM dd, yyyy}\" />"
+		],
+		"description": "DNN Current Date",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN DDR Menu": {
+		"prefix": "dnnddr",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" Namespace=\"DotNetNuke.Web.DDRMenu.TemplateEngine\" Assembly=\"DotNetNuke.Web.DDRMenu\" %>",
+			"<dnn:Menu runat=\"server\" MenuStyle=\"$1\" NodeSelector=\"$2\" IncludeNodes=\"$3\" ExcludeNodes=\"$4\" IncludeHidden=\"$5\" NodeXmlPath=\"$6\" NodeManipulator=\"$7\">\n\t<TemplateArguments> \n\t\t<dnn:TemplateArgument Name=\"\" Value=\"\" />\n\t</TemplateArguments>\n\t<ClientOptions>\n\t\t<dnn:ClientString Name=\"\" Value=\"\" />\n\t\t<dnn:ClientNumber Name=\"\" Value=\"\" />\n\t\t<dnn:ClientBoolean Name=\"\" Value=\"\" />\n\t</ClientOptions>",
+			"</dnn:MENU>"
+		],
+		"description": "DNN DDR Menu",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Javascript Include": {
+		"prefix": "dnnjs",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" Namespace=\"DotNetNuke.Web.Client.ClientResourceManagement\" Assembly=\"DotNetNuke.Web.Client\" %>",
+			"<dnn:DnnJsInclude runat=\"server\" PathNameAlias=\"${1:[SkinPath, SharedScripts]}\" FilePath=\"$2\" Priority=\"$3\" ForceProvider=\"$4\" />"
+		],
+		"description": "DNN JS Include",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Language": {
+		"prefix": "dnnlanguage",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"LANGUAGE\" Src=\"~/Admin/Skins/Language.ascx\" %>",
+			"<dnn:Language runat=\"server\" id=\"${1:dnnLanguage}\" ShowMenu=\"${2:[true, false]}\" ShowLinks=\"${3:[true, false]}\" CommonHeaderTemplate=\"$4\" HeaderTemplate=\"$5\" ItemTemplate=\"$6\" AlternateTemplate=\"$7\" SeparatorTemplate=\"$8\" FooterTemplate=\"$9\" CommonFooterTemplate=\"$10\" CssClass=\"$11\" />"
+		],
+		"description": "DNN Language",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Link to Full Site": {
+		"prefix": "dnnlinkfull",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"LinkToFullSite\" Src=\"~/Admin/Skins/LinkToFullSite.ascx\" %>",
+			"<dnn:LinkToFullSite ID=\"${1:dnnLinkToFullSite}\" runat=\"server\" />"
+		],
+		"description": "DNN Link to Full Site",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Link to Mobile Site": {
+		"prefix": "dnnlinkmobile",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"LinkToMobileSite\" Src=\"~/Admin/Skins/LinkToMobileSite.ascx\" %>",
+			"<dnn:LinkToMobileSite ID=\"${1:dnnLinkToMobileSite}\" runat=\"server\" />"
+		],
+		"description": "DNN Link to Mobile Site",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Links": {
+		"prefix": "dnnlinks",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"LINKS\" src=\"~/Admin/Skins/Links.ascx\" %>",
+			"<dnn:LINKS runat=\"server\" id=\"${1:dnnLINKS}\" CssClass=\"$2\" Separator=\"$3\" Alignment=\"${4:[horizontal, vertical]}\" Level=\"${5:[same, child, parent, root]}\" ForceLinks=\"${6:[true, false]}\" />"
+		],
+		"description": "DNN Links",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Login": {
+		"prefix": "dnnlogin",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"Login\" Src=\"~/Admin/Skins/login.ascx\" %>",
+			"<dnn:Login runat=\"server\" id=\"${1:dnnLogin}\" Text=\"${2:Login}\" CssClass=\"$3\" LogoffText=\"${4:Logout}\" LegacyMode=\"${5:true}\" />"
+		],
+		"description": "DNN Login",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Logo": {
+		"prefix": "dnnlogo",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"Logo\" Src=\"~/Admin/Skins/logo.ascx\" %>",
+			"<dnn:Logo runat=\"server\" id=\"${1:dnnLogo}\" />"
+		],
+		"description": "DNN Logo",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Meta": {
+		"prefix": "dnnmeta",
+		"body": [
+			"<<%@ Register TagPrefix=\"dnn\" TagName=\"META\" Src=\"~/Admin/Skins/Meta.ascx\" %>",
+			"<dnn:META runat=\"server\" Name=\"$1\" Content=\"$2\" />"
+		],
+		"description": "DNN Meta",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Privacy": {
+		"prefix": "dnnprivacy",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"Privacy\" Src=\"~/Admin/Skins/privacy.ascx\" %>",
+			"<dnn:Privacy runat=\"server\" id=\"${1:dnnPrivacy}\" Text=\"${2:Privacy Statement}\" CssClass=\"$3\" />"
+		],
+		"description": "DNN Privacy",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Search": {
+		"prefix": "dnnsearch",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"Search\" Src=\"~/Admin/Skins/search.ascx\" %>",
+			"<dnn:Search runat=\"server\" id=\"${1:dnnSearch}\" CssClass=\"$2\" ShowSite=\"${3:false}\" ShowWeb=\"${4:false}\" SiteIconURL=\"$5\" SiteText=\"$6\" SiteToolTip=\"$7\" SiteUrl=\"$8\" Submit=\"$9\" UseWebForSite=\"${10:false}\" UseDropDownList=\"${11:false}\" WebIconURL=\"$12\" WebText=\"$13\" WebToolTip=\"$14\" WebURL=\"$15\" />"
+		],
+		"description": "DNN Search",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Terms": {
+		"prefix": "dnnterms",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"Terms\" Src=\"~/Admin/Skins/terms.ascx\" %>",
+			"<dnn:Terms runat=\"server\" id=\"${1:dnnTerms}\" Text=\"${2:Terms of Use}\" CssClass=\"$3\" />"
+		],
+		"description": "DNN Terms",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Text": {
+		"prefix": "dnntext",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"TEXT\" Src=\"~/Admin/Skins/Text.ascx\" %>",
+			"<dnn:TEXT runat=\"server\" id=\"${1:dnnTEXT}\" Text=\"$2\" resourceKey=\"$3\" replaceTokens=\"${4:false}\" CssClass=\"$5\" />"
+		],
+		"description": "DNN Text",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN User": {
+		"prefix": "dnnuser",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"User\" Src=\"~/Admin/Skins/user.ascx\" %>",
+			"<dnn:User runat=\"server\" id=\"${1:dnnUser}\" Text=\"${2:Register}\" CssClass=\"$3\" LegacyMode=\"${4:true}\" />"
+		],
+		"description": "DNN User",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Is Admin": {
+		"prefix": "dnnisadmin",
+		"body": [
+			"<% =UserController.GetCurrentUserInfo().IsInRole(\"Administrators\").ToString().ToLower() %>"
+		],
+		"description": "DNN Skin Token: Is Admin",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Logged In": {
+		"prefix": "dnnloggedin",
+		"body": [
+			"<% =Request.IsAuthenticated %>"
+		],
+		"description": "DNN Skin Token: Is User Logged In",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Edit Mode": {
+		"prefix": "dnneditmode",
+		"body": [
+			"<% =DotNetNuke.Common.Globals.IsEditMode() %>"
+		],
+		"description": "DNN Skin Token: Edit Mode",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Page Description": {
+		"prefix": "dnnpagedescription",
+		"body": [
+			"<% =PortalSettings.ActiveTab.Description %>"
+		],
+		"description": "DNN Skin Token: Current Page Description",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Page Icon": {
+		"prefix": "dnnpageicon",
+		"body": [
+			"<% =PortalSettings.ActiveTab.IconFile %>"
+		],
+		"description": "DNN Skin Token: Current Page Icon",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Page Keywords": {
+		"prefix": "dnnpagekeywords",
+		"body": [
+			"<% =PortalSettings.ActiveTab.KeyWords %>"
+		],
+		"description": "DNN Skin Token: Current Page Keywords",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Page Level": {
+		"prefix": "dnnpagelevel",
+		"body": [
+			"<% =PortalSettings.ActiveTab.Level %>"
+		],
+		"description": "DNN Skin Token: Current Page Level",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Page Name": {
+		"prefix": "dnnpagename",
+		"body": [
+			"<% =PortalSettings.ActiveTab.TabName %>"
+		],
+		"description": "DNN Skin Token: Current Page Name",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Page Order": {
+		"prefix": "dnnpageorder",
+		"body": [
+			"<% =PortalSettings.ActiveTab.TabOrder %>"
+		],
+		"description": "DNN Skin Token: Current Page Order",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN pagepath": {
+		"prefix": "dnnpagepath",
+		"body": [
+			"<% =PortalSettings.ActiveTab.TabPath %>"
+		],
+		"description": "DNN Skin Token: Current Page Path",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Page ID": {
+		"prefix": "dnnpageid",
+		"body": [
+			"<% =PortalSettings.ActiveTab.TabID %>"
+		],
+		"description": "DNN Skin Token: Current Page TabID",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Page Title": {
+		"prefix": "dnnpagetitle",
+		"body": [
+			"<% =PortalSettings.ActiveTab.Title %>"
+		],
+		"description": "DNN Skin Token: Current Page Title (Not Name)",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Page Type": {
+		"prefix": "dnnpagetype",
+		"body": [
+			"<% =PortalSettings.ActiveTab.TabType %>"
+		],
+		"description": "DNN Skin Token: Current Page Type",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Page URL": {
+		"prefix": "dnnpageurl",
+		"body": [
+			"<% =PortalSettings.ActiveTab.FullUrl %>"
+		],
+		"description": "DNN Skin Token: Current Page Url",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Portal Description": {
+		"prefix": "dnnportaldescription",
+		"body": [
+			"<% =PortalSettings.Description %>"
+		],
+		"description": "DNN Skin Token: Portal Description",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Portal Directory": {
+		"prefix": "dnnportaldirectory",
+		"body": [
+			"<%= PortalSettings.HomeDirectory %>"
+		],
+		"description": "DNN Skin Token: Portal Directory",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Portal Domain Name": {
+		"prefix": "dnnportaldomainname",
+		"body": [
+			"<% =PortalSettings.PortalAlias.HTTPAlias %>"
+		],
+		"description": "DNN Skin Token: Portal Domain Name",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Portal Email": {
+		"prefix": "dnnportalemail",
+		"body": [
+			"<% =PortalSettings.Email %>"
+		],
+		"description": "DNN Skin Token: Portal Email",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Portal ID": {
+		"prefix": "dnnportalid",
+		"body": [
+			"<% =PortalSettings.PortalId %>"
+		],
+		"description": "DNN Skin Token: Portal Id",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Portal Keywords": {
+		"prefix": "dnnportalkeywords",
+		"body": [
+			"<% =PortalSettings.KeyWords %>"
+		],
+		"description": "DNN Skin Token: Portal Keywords",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Portal Name": {
+		"prefix": "dnnportalname",
+		"body": [
+			"<% =PortalSettings.PortalName %>"
+		],
+		"description": "DNN Skin Token: Portal Name",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN rootid": {
+		"prefix": "dnnrootid",
+		"body": [
+			"<% =PortalSettings.ActiveTab.BreadCrumbs.Cast<DotNetNuke.Entities.Tabs.TabInfo>().First().TabID %>"
+		],
+		"description": "DNN Skin Token: Root Breadcrumb ID",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Admin Page ID": {
+		"prefix": "dnnadminpageid",
+		"body": [
+			"<% =PortalSettings.AdminTabId %>"
+		],
+		"description": "DNN Skin Token: Admin Page Id",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Admin Page URL": {
+		"prefix": "dnnadminpageurl",
+		"body": [
+			"<% =DotNetNuke.Common.Globals.NavigateURL(PortalSettings.AdminTabId) %>"
+		],
+		"description": "DNN Skin Token: Admin Page Url",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Home Page ID": {
+		"prefix": "dnnhomepageid",
+		"body": [
+			"<% =PortalSettings.HomeTabId %>"
+		],
+		"description": "DNN Skin Token: Home Page Id",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Home Page URL": {
+		"prefix": "dnnhomepageurl",
+		"body": [
+			"<% = DotNetNuke.Common.Globals.NavigateURL(PortalSettings.HomeTabId) %>"
+		],
+		"description": "DNN Skin Token: Home Page Url",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Host Page ID": {
+		"prefix": "dnnhostpageid",
+		"body": [
+			"<% =PortalSettings.SuperTabId %>"
+		],
+		"description": "DNN Skin Token: Host Page Id",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Host Page URL": {
+		"prefix": "dnnhostpageurl",
+		"body": [
+			"<% =DotNetNuke.Common.Globals.NavigateURL(PortalSettings.SuperTabId) %>"
+		],
+		"description": "DNN Skin Token: Host Page Url",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Login Page ID": {
+		"prefix": "dnnloginpageid",
+		"body": [
+			"<% =PortalSettings.LoginTabId %>"
+		],
+		"description": "DNN Skin Token: Login Page Id",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Login Page URL": {
+		"prefix": "dnnloginpageurl",
+		"body": [
+			"<% =DotNetNuke.Common.Globals.NavigateURL(PortalSettings.LoginTabId) %>"
+		],
+		"description": "DNN Skin Token: Login Page Url",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Profile Page ID": {
+		"prefix": "dnnprofilepageid",
+		"body": [
+			"<% =PortalSettings.UserTabId %>"
+		],
+		"description": "DNN Skin Token: Profile Page Id",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Profile Page URL": {
+		"prefix": "dnnprofilepageurl",
+		"body": [
+			"<% =DotNetNuke.Common.Globals.NavigateURL(PortalSettings.UserTabId) %>"
+		],
+		"description": "DNN Skin Token: Profile Page Url",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Register Page ID": {
+		"prefix": "dnnregisterpageid",
+		"body": [
+			"<% =PortalSettings.RegisterTabId %>"
+		],
+		"description": "DNN Skin Token: Register Page Id",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Register Page URL": {
+		"prefix": "dnnregisterpageurl",
+		"body": [
+			"<% =DotNetNuke.Common.Globals.NavigateURL(PortalSettings.RegisterTabId) %>"
+		],
+		"description": "DNN Skin Token: Register Page Url",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Search Page ID": {
+		"prefix": "dnnsearchpageid",
+		"body": [
+			"<% =PortalSettings.SearchTabId %>"
+		],
+		"description": "DNN Skin Token: Search Results Page Id",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Search Page URL": {
+		"prefix": "dnnsearchpageurl",
+		"body": [
+			"<% =DotNetNuke.Common.Globals.NavigateURL(PortalSettings.SearchTabId) %>"
+		],
+		"description": "DNN Skin Token: Search Results Page Url",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Splash Page ID": {
+		"prefix": "dnnsplashpageid",
+		"body": [
+			"<% =PortalSettings.SplashTabId %>"
+		],
+		"description": "DNN Skin Token: Splash Page Id",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Splash Page URL": {
+		"prefix": "dnnsplashpageurl",
+		"body": [
+			"<% =DotNetNuke.Common.Globals.NavigateURL(PortalSettings.SplashTabId) %>"
+		],
+		"description": "DNN Skin Token: Splash Page Url",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Skin Path": {
+		"prefix": "dnnskinpath",
+		"body": [
+			"<% =SkinPath %>"
+		],
+		"description": "DNN Skin Token: Path to Current Skin",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN User Display Name": {
+		"prefix": "dnnuserdisplayname",
+		"body": [
+			"<% =UserController.GetCurrentUserInfo().DisplayName %>"
+		],
+		"description": "DNN Skin Token: User Displayname",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN User Email": {
+		"prefix": "dnnuseremail",
+		"body": [
+			"<% =UserController.GetCurrentUserInfo().Email %>"
+		],
+		"description": "DNN Skin Token: User Email",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN User First Name": {
+		"prefix": "dnnuserfirstname",
+		"body": [
+			"<% =UserController.GetCurrentUserInfo().FirstName %>"
+		],
+		"description": "DNN Skin Token: User First Name",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN User ID": {
+		"prefix": "dnnuserid",
+		"body": [
+			"<% =UserController.GetCurrentUserInfo().UserID %>"
+		],
+		"description": "DNN Skin Token: User Id",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN User Last Name": {
+		"prefix": "dnnuserlastname",
+		"body": [
+			"<% =UserController.GetCurrentUserInfo().LastName %>"
+		],
+		"description": "DNN Skin Token: User Last Name",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN User Profile": {
+		"prefix": "dnnuserprofile",
+		"body": [
+			"<% =DotNetNuke.Common.Globals.NavigateURL(PortalSettings.UserTabId) %>"
+		],
+		"description": "DNN Skin Token: User Profile Page Url",
+		"scope": "asp,.aspx,.ascx,.inc"
+	}
+}
