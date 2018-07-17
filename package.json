@@ -2,8 +2,8 @@
 	"name": "dnn-theming-snippets",
 	"displayName": "DNN Theming Snippets",
 	"description": "DNN Theming Snippets",
-	"keywords": ["DNN","Dot Net Nuke","Skins","Skinning","Theme","Theming","Skin Objects","Tokens"],
-	"version": "0.0.1",
+	"keywords": ["DNN","Dot Net Nuke","Skin","Theme","Tokens"],
+	"version": "0.0.3",
 	"publisher": "theleewise",
 	"icon": "images/icon.png",
 	"engines": {
@@ -12,6 +12,14 @@
 	"categories": [
 		"Snippets"
 	],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "asp",
+                "path": "./snippets/dnn-snippets.json"
+            }
+        ]
+    },
 	"repository": {
         "type": "git",
         "url": "https://github.com/theleewise/VS-Code-DNN-Theming-Snippets.git"
