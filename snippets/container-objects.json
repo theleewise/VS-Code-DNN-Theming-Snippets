@@ -1,0 +1,28 @@
+{
+	"DNN Container Content Pane": {
+		"prefix": "dnncontainercontentpane",
+		"body": [
+			"<div runat=\"server\" id=\"${1:ContentPane}\" />"
+		],
+		"description": "DNN Container Content Pane",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Container Icon": {
+		"prefix": "dnncontainericon",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"Icon\" Src=\"~/Admin/Containers/icon.ascx\" %>",
+			"<dnn:Icon runat=\"server\" id=\"${1:dnnIcon}\" />"
+		],
+		"description": "DNN Container Icon",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Container Title": {
+		"prefix": "dnncontainertitle",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"TITLE\" Src=\"~/Admin/Containers/Title.ascx\" %>",
+			"<dnn:Title runat=\"server\" id=\"${1:dnnTitle}\" />"
+		],
+		"description": "DNN Container Title",
+		"scope": "asp,.aspx,.ascx,.inc"
+	}
+}

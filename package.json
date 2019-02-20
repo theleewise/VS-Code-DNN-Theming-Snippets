@@ -15,8 +15,16 @@
     "contributes": {
         "snippets": [
             {
-                "language": "asp",
+                "language": "asp,c#",
                 "path": "./snippets/dnn-snippets.json"
+            },
+            {
+                "language": "asp,c#",
+                "path": "./snippets/skin-objects.json"
+            },
+            {
+                "language": "asp,c#",
+                "path": "./snippets/container-objects.json"
             }
         ]
     },

@@ -1,0 +1,183 @@
+{
+	"DNN Breadcrumbs": {
+		"prefix": "dnnbreadcrumbs",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"Breadcrumb\" Src=\"~/Admin/Skins/breadcrumb.ascx\" %>",
+			"<dnn:Breadcrumb runat=\"server\" id=\"${1:dnnBreadcrumb}\" CssClass=\"$2\" RootLevel=\"${3:1}\" Separator=\"$4\" UseTitle=\"${5:[true, false]}\" />"
+		],
+		"description": "Displays the path to the current tab (> is the default separator). Example: PageName1 > PageName2 > PageName3",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN CSS Include": {
+		"prefix": "dnncss",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" Namespace=\"DotNetNuke.Web.Client.ClientResourceManagement\" Assembly=\"DotNetNuke.Web.Client\" %>",
+			"<dnn:DnnCssInclude runat=\"server\" PathNameAlias=\"${1:[SkinPath, SharedScripts]}\" FilePath=\"$2\" Priority=\"$3\" ForceProvider=\"$4\" />"
+		],
+		"description": "Adds a stylesheet reference to the page.",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN CSS Exclude": {
+		"prefix": "dnncssremove",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" Namespace=\"DotNetNuke.Web.Client.ClientResourceManagement\" Assembly=\"DotNetNuke.Web.Client\" %>",
+			"<dnn:DnnCssExclude runat=\"server\" Name=\"$1\" />"
+		],
+		"description": "Prevents a stylesheet reference from being included in the page.",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Copyright": {
+		"prefix": "dnncopyright",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"Copyright\" Src=\"~/Admin/Skins/copyright.ascx\" %>",
+			"<dnn:Copyright runat=\"server\" id=\"${1:dnnCopyright}\" CssClass=\"$2\" />"
+		],
+		"description": "Displays the copyright notice for the website.",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Date": {
+		"prefix": "dnndate",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"CURRENTDATE\" Src=\"~/Admin/Skins/CurrentDate.ascx\" %>",
+			"<dnn:CurrentDate runat=\"server\" id=\"${1:dnnCurrentDate}\" CssClass=\"$2\" DateFormat=\"${3:MMM dd, yyyy}\" />"
+		],
+		"description": "Displays the current date on the server.",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN DDR Menu": {
+		"prefix": "dnnddr",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" Namespace=\"DotNetNuke.Web.DDRMenu.TemplateEngine\" Assembly=\"DotNetNuke.Web.DDRMenu\" %>",
+			"<dnn:Menu runat=\"server\" MenuStyle=\"$1\" NodeSelector=\"$2\" IncludeNodes=\"$3\" ExcludeNodes=\"$4\" IncludeHidden=\"$5\" NodeXmlPath=\"$6\" NodeManipulator=\"$7\">\n\t<TemplateArguments> \n\t\t<dnn:TemplateArgument Name=\"\" Value=\"\" />\n\t</TemplateArguments>\n\t<ClientOptions>\n\t\t<dnn:ClientString Name=\"\" Value=\"\" />\n\t\t<dnn:ClientNumber Name=\"\" Value=\"\" />\n\t\t<dnn:ClientBoolean Name=\"\" Value=\"\" />\n\t</ClientOptions>",
+			"</dnn:MENU>"
+		],
+		"description": "Displays a menu using the DDRMenu control.",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Javascript Include": {
+		"prefix": "dnnjs",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" Namespace=\"DotNetNuke.Web.Client.ClientResourceManagement\" Assembly=\"DotNetNuke.Web.Client\" %>",
+			"<dnn:DnnJsInclude runat=\"server\" PathNameAlias=\"${1:[SkinPath, SharedScripts]}\" FilePath=\"$2\" Priority=\"$3\" ForceProvider=\"$4\" />"
+		],
+		"description": "Adds a JavaScript file reference to the page.",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN JS Exclude": {
+		"prefix": "dnnremovejs",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" Namespace=\"DotNetNuke.Web.Client.ClientResourceManagement\" Assembly=\"DotNetNuke.Web.Client\" %>",
+			"<dnn:DnnJsExclude runat=\"server\" Name=\"$1\" />"
+		],
+		"description": "Prevents a javascript reference from being included in the page.",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Language": {
+		"prefix": "dnnlanguage",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"LANGUAGE\" Src=\"~/Admin/Skins/Language.ascx\" %>",
+			"<dnn:Language runat=\"server\" id=\"${1:dnnLanguage}\" ShowMenu=\"${2:[true, false]}\" ShowLinks=\"${3:[true, false]}\" CommonHeaderTemplate=\"$4\" HeaderTemplate=\"$5\" ItemTemplate=\"$6\" AlternateTemplate=\"$7\" SeparatorTemplate=\"$8\" FooterTemplate=\"$9\" CommonFooterTemplate=\"$10\" CssClass=\"$11\" />"
+		],
+		"description": "Displays the language selector dropdown list or the language flags based on the theme object attribute settings.",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Link to Full Site": {
+		"prefix": "dnnlinkfull",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"LinkToFullSite\" Src=\"~/Admin/Skins/LinkToFullSite.ascx\" %>",
+			"<dnn:LinkToFullSite ID=\"${1:dnnLinkToFullSite}\" runat=\"server\" />"
+		],
+		"description": "DNN Link to Full Site",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Link to Mobile Site": {
+		"prefix": "dnnlinkmobile",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"LinkToMobileSite\" Src=\"~/Admin/Skins/LinkToMobileSite.ascx\" %>",
+			"<dnn:LinkToMobileSite ID=\"${1:dnnLinkToMobileSite}\" runat=\"server\" />"
+		],
+		"description": "DNN Link to Mobile Site",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Links": {
+		"prefix": "dnnlinks",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"LINKS\" src=\"~/Admin/Skins/Links.ascx\" %>",
+			"<dnn:LINKS runat=\"server\" id=\"${1:dnnLINKS}\" CssClass=\"$2\" Separator=\"$3\" Alignment=\"${4:[horizontal, vertical]}\" Level=\"${5:[same, child, parent, root]}\" ForceLinks=\"${6:[true, false]}\" />"
+		],
+		"description": "Displays a flat menu of links associated with the current tab level and the parent node.",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Login": {
+		"prefix": "dnnlogin",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"Login\" Src=\"~/Admin/Skins/login.ascx\" %>",
+			"<dnn:Login runat=\"server\" id=\"${1:dnnLogin}\" Text=\"${2:Login}\" CssClass=\"$3\" LogoffText=\"${4:Logout}\" LegacyMode=\"${5:true}\" />"
+		],
+		"description": "Displays Login for anonymous users and Logout for authenticated users.",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Logo": {
+		"prefix": "dnnlogo",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"Logo\" Src=\"~/Admin/Skins/logo.ascx\" %>",
+			"<dnn:Logo runat=\"server\" id=\"${1:dnnLogo}\" />"
+		],
+		"description": "Displays the website's logo.",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Meta": {
+		"prefix": "dnnmeta",
+		"body": [
+			"<<%@ Register TagPrefix=\"dnn\" TagName=\"META\" Src=\"~/Admin/Skins/Meta.ascx\" %>",
+			"<dnn:META runat=\"server\" Name=\"$1\" Content=\"$2\" />"
+		],
+		"description": "DNN Meta",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Privacy": {
+		"prefix": "dnnprivacy",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"Privacy\" Src=\"~/Admin/Skins/privacy.ascx\" %>",
+			"<dnn:Privacy runat=\"server\" id=\"${1:dnnPrivacy}\" Text=\"${2:Privacy Statement}\" CssClass=\"$3\" />"
+		],
+		"description": "Displays a link to the Privacy Information page for the website.",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Search": {
+		"prefix": "dnnsearch",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"Search\" Src=\"~/Admin/Skins/search.ascx\" %>",
+			"<dnn:Search runat=\"server\" id=\"${1:dnnSearch}\" CssClass=\"$2\" ShowSite=\"${3:false}\" ShowWeb=\"${4:false}\" SiteIconURL=\"$5\" SiteText=\"$6\" SiteToolTip=\"$7\" SiteUrl=\"$8\" Submit=\"$9\" UseWebForSite=\"${10:false}\" UseDropDownList=\"${11:false}\" WebIconURL=\"$12\" WebText=\"$13\" WebToolTip=\"$14\" WebURL=\"$15\" />"
+		],
+		"description": "Displays the search input box.",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Terms": {
+		"prefix": "dnnterms",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"Terms\" Src=\"~/Admin/Skins/terms.ascx\" %>",
+			"<dnn:Terms runat=\"server\" id=\"${1:dnnTerms}\" Text=\"${2:Terms of Use}\" CssClass=\"$3\" />"
+		],
+		"description": "DNN Terms",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN Text": {
+		"prefix": "dnntext",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"TEXT\" Src=\"~/Admin/Skins/Text.ascx\" %>",
+			"<dnn:TEXT runat=\"server\" id=\"${1:dnnTEXT}\" Text=\"$2\" resourceKey=\"$3\" replaceTokens=\"${4:false}\" CssClass=\"$5\" />"
+		],
+		"description": "Displays localized text in your theme and supports the use of token replacement.",
+		"scope": "asp,.aspx,.ascx,.inc"
+	},
+	"DNN User": {
+		"prefix": "dnnuser",
+		"body": [
+			"<%@ Register TagPrefix=\"dnn\" TagName=\"User\" Src=\"~/Admin/Skins/user.ascx\" %>",
+			"<dnn:User runat=\"server\" id=\"${1:dnnUser}\" Text=\"${2:Register}\" CssClass=\"$3\" LegacyMode=\"${4:true}\" />"
+		],
+		"description": "Displays a Register link for anonymous users or the user's name for authenticated users.",
+		"scope": "asp,.aspx,.ascx,.inc"
+	}
+}
